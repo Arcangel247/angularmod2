@@ -1,0 +1,17 @@
+<h1>Página de Gestión de Stock (Reactiva)</h1>
+<hr>
+
+<div class="row">
+  <div class="col-12">
+
+    <stock-add-reactive
+
+      [parentForm]="stockForm"
+
+      [stockList]="stockService.stocklist()"
+
+      (OnNewStock)="onStockSubmit()">
+    </stock-add-reactive>
+
+  </div>
+</div>
